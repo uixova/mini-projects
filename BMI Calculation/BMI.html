@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI APPs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div>
+            <h1>BMI Calculator</h1>
+            <form onsubmit="return kontrolEt()">
+                    <label for="kg">Kilonuz:</label>
+                <input id="kg" type="text" required>
+                    <label for="height">Boyunuz:</label>
+                <input id="height" type="text" required>
+                <button id="btn" class="sub-btn" type="submit">Hesapla</button>
+                <button id="btn" class="reset-btn" type="reset">Temizle</button>
+            </form>
+        </div>
+
+        <script src="BMI.js"></script>
+    </body>
+</html>
