@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CafeHot - Kahve ve Lezzetin Adresi</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="https://i.ibb.co/zH4XL7Yj/cafelogo.png"
+            type="image/x-icon">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="baslik">
+                <div class="logo">
+                    <a href="#" onclick="goHome()">
+                        <img src="https://i.ibb.co/zH4XL7Yj/cafelogo.png"
+                            alt="CafeHot Logo" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav-links">
+                    <a href="#" onclick="showSection('home')">Anasayfa</a>
+                    <a href="#" onclick="showSection('menu')">Menü</a>
+                    <a href="#" onclick="showSection('gallery')">Galeri</a>
+                    <a href="#"
+                        onclick="showSection('reservation')">Rezervasyon</a>
+                    <a href="#" onclick="showSection('contact')">İletişim</a>
+                </nav>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"
+                        aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"
+                        aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="section">
+                <div class="mai-container">
+                    <div class="cafe-image">
+                        <img src="https://i.ibb.co/8nXsgy5D/anasayfa-img.jpg"
+                            alt="Ana Cafe Görseli">
+                    </div>
+                    <div class="metin-kutusu1">
+                        <h2 class="baslik1">Hoş Geldiniz</h2>
+                        <p class="metin1">CafeHot, sıcak bir ortamda kaliteli
+                            kahveleri ve eşsiz tatları bir araya getiren bir
+                            mekandır. Güne enerjik bir başlangıç yapmak,
+                            dostlarınızla keyifli anlar geçirmek veya sakin bir
+                            mola vermek için ideal bir durak. Kendinizi evinizde
+                            hissedin.</p>
+                    </div>
+                    <div class="metin-kutusu2">
+                        <h2 class="baslik2">Vizyonumuz</h2>
+                        <p class="metin2">Müşterilerimize sadece bir kahve
+                            değil, aynı zamanda unutulmaz bir deneyim sunmayı
+                            hedefliyoruz. Her yudumda kaliteyi, her tabakta
+                            tutkuyu bulacaksınız. Sürdürülebilir ve etik
+                            kaynaklardan elde edilen ürünlerle fark
+                            yaratıyoruz.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu" class="section" style="display: none;">
+                <h2 class="menu-title">Lezzet Durakları</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Espresso</div>
+                        <div class="item-description">Yoğun ve aromatik bir
+                            deneyim.</div>
+                        <div class="item-price">45₺</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Latte</div>
+                        <div class="item-description">Sütlü ve yumuşak içimli
+                            kahve.</div>
+                        <div class="item-price">60₺</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Cheesecake</div>
+                        <div class="item-description">Günün özel taze cheesecake
+                            çeşidi.</div>
+                        <div class="item-price">95₺</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Brownie</div>
+                        <div class="item-description">Sıcak, bol çikolatalı ve
+                            dondurmalı.</div>
+                        <div class="item-price">80₺</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Sandviç (Özel)</div>
+                        <div class="item-description">CafeHot'a özel, taze ve
+                            doyurucu.</div>
+                        <div class="item-price">120₺</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="section" style="display: none;">
+                <h2 class="gallery-title">CafeHot Anları</h2>
+                <div class="gallery-grid">
+                    <img src="https://i.ibb.co/tptBn4zj/img1.jpg"
+                        alt="Cafe İç Görünüm 1" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/tpkPRrgS/img2.jpg"
+                        alt="Cafe İç Görünüm 2" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/bgtytfKJ/img3.jpg"
+                        alt="Özel Kahve Servisi" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/4g3gZ2gn/img4.jpg"
+                        alt="Filtre Kahve Demleme" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/b5RK20Q5/img5.jpg"
+                        alt="Tatlı Tabağı" onclick="openLightbox(this)">
+                    <img src="https://i.ibb.co/DHLNLYjr/img6.jpg"
+                        alt="Dış Görünüm" onclick="openLightbox(this)">
+                </div>
+            </section>
+
+            <section id="reservation" class="section reservation-section"
+                style="display: none;">
+                <div class="reservation-content-wrapper">
+                    <h2 class="reservation-title">Hemen Yerini Ayırt</h2>
+
+                    <form class="reservation-form">
+                        <div class="form-grid">
+                            <div>
+                                <label for="res-name">Adınız Soyadınız *</label>
+                                <input type="text" id="res-name" name="name"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="res-tel">Telefon Numaranız *</label>
+                                <input type="tel" id="res-tel" name="tel"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="res-date">Tarih *</label>
+                                <input type="date" id="res-date" name="date"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="res-time">Saat *</label>
+                                <input type="time" id="res-time" name="time"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="res-guests">Kişi Sayısı *</label>
+                                <input type="number" id="res-guests"
+                                    name="guests" min="1" max="10" required>
+                            </div>
+                            <div class="full-width">
+                                <label for="res-requests">Özel İstekleriniz
+                                    (Alerji, yer tercihi vb.)</label>
+                                <textarea id="res-requests"
+                                    name="requests"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="reservation-button">Rezervasyonu
+                            Tamamla</button>
+                        <p class="form-note">* Rezervasyonunuz, telefonla
+                            onaylandıktan sonra geçerli olacaktır.</p>
+                    </form>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact-section"
+                style="display: none;">
+                <div class="contact-content-wrapper">
+                    <h2 class="contact-title">Bize Ulaşın</h2>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Bilgilerimiz</h3>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Merkez Mahallesi, Kahve Sokak No: 5,
+                                    Kadıköy/İstanbul</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+90 555 123 45 67</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>info@cafehot.com</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="far fa-clock"></i>
+                                <p>Çalışma Saatleri: Her Gün 09:00 - 23:00</p>
+                            </div>
+
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.68285565349!2d29.02017331539401!3d41.02640597929452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7964a5c4e97%3A0x7d6a5e1e7e1e7e1e!2sGalata%20Kulesi!5e0!3m2!1str!2str!4v1678901234567!5m2!1str!2str"
+                                    width="100%" height="250" style="border:0;"
+                                    allowfullscreen loading="lazy"></iframe>
+                            </div>
+
+                        </div>
+                        <form class="contact-form">
+                            <h3>Mesaj Gönderin</h3>
+                            <label for="contact-name">Adınız Soyadınız *</label>
+                            <input type="text" id="contact-name" name="name"
+                                required>
+
+                            <label for="contact-email">E-posta Adresiniz
+                                *</label>
+                            <input type="email" id="contact-email" name="email"
+                                required>
+
+                            <label for="contact-subject">Konu</label>
+                            <input type="text" id="contact-subject"
+                                name="subject">
+
+                            <label for="contact-message">Mesajınız *</label>
+                            <textarea id="contact-message" name="message"
+                                required></textarea>
+
+                            <button type="submit" class="contact-button">Mesajı
+                                Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>CafeHot</h3>
+                    <p>Sıcak kahveler, taze lezzetler ve samimi bir ortam.</p>
+                    <p>Bizi sosyal medyada takip edin:</p>
+                    <ul class="footer-icons">
+                        <li><a href="https://www.instagram.com" target="_blank"
+                                aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"
+                                aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"
+                                aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Hızlı Erişim</h3>
+                    <ul class="list">
+                        <li><a href="#"
+                                onclick="showSection('home')">Anasayfa</a></li>
+                        <li><a href="#"
+                                onclick="showSection('menu')">Menü</a></li>
+                        <li><a href="#"
+                                onclick="showSection('gallery')">Galeri</a></li>
+                        <li><a href="#"
+                                onclick="showSection('reservation')">Rezervasyon</a></li>
+                        <li><a href="#"
+                                onclick="showSection('contact')">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Merkez Mahallesi,
+                        Kahve Sokak No: 5, Kadıköy/İstanbul</p>
+                    <p><i class="fas fa-phone-alt"></i> +90 555 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@cafehot.com</p>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 2024 CafeHot. Tüm Hakları Saklıdır. Geliştirici:
+                    Uixova</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flower</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Ana Sayfa Section -->
+<div id="home" class="section">
+  <div class="left home-left"></div>
+  <div class="right">
+    <header>
+      <div class="logo-div">
+          <a href="index.html"><img class="logo" src="assets/image/my-flower-bg.png" alt="Logo"></a>
+      </div>
+    </header>
+    <nav class="home-nav">
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Ana Sayfa</a></li>
+        <li><a href="#" onclick="showSection('about')">Hakkında</a></li>
+        <!-- <li><a href="#" onclick="showSection('gallery')">Galeri</a></li> -->
+        <li><a href="#" onclick="showSection('contact')">İletişim</a></li>
+      </ul>
+    </nav>
+    <h1>Kokular ve Renklerle Buluşun</h1>
+    <p>Çiçeklerle anlat, kalplere dokun.</p>
+    <div class="social">
+      <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Hakkında Section -->
+<div id="about" class="section" style="display:none;">
+  <div class="left about-left"></div>
+  <div class="right">
+    <header>
+      <div class="logo-div">
+          <a href="index.html"><img class="logo" src="assets/image/my-flower-bg.png" alt="Logo"></a>
+      </div>
+    </header>
+    <nav class="home-nav">
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Ana Sayfa</a></li>
+        <li><a href="#" onclick="showSection('about')">Hakkında</a></li>
+        <li><a href="#" onclick="showSection('contact')">İletişim</a></li>
+      </ul>
+    </nav>
+    <h1>Hakkımızda</h1>
+    <div class="about-content">
+      <p>
+        Biz çiçeklerin dilini en güzel şekilde ifade eden bir çiçekçiyiz. 
+        Kokular, renkler ve estetik dokunuşlarla her anınızı özel kılmayı amaçlıyoruz. 
+        Müşterilerimize sadece çiçek değil, aynı zamanda bir deneyim sunuyoruz.
+      </p>
+      <ul class="about-points">
+        <li>Kaliteli ve taze çiçekler</li>
+        <li>Hızlı teslimat</li>
+        <li>Kişiye özel aranjmanlar</li>
+        <li>Müşteri memnuniyeti garantisi</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- İletişim Section -->
+<div id="contact" class="section" style="display:none;">
+  <div class="left contact-left"></div> 
+  <div class="right">
+    <header>
+      <div class="logo-div">
+          <a href="index.html"><img class="logo" src="assets/image/my-flower-bg.png" alt="Logo"></a>
+      </div>
+    </header>
+    <nav class="home-nav">
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Ana Sayfa</a></li>
+        <li><a href="#" onclick="showSection('about')">Hakkında</a></li>
+        <li><a href="#" onclick="showSection('contact')">İletişim</a></li>
+      </ul>
+    </nav>
+    <h1>İletişim</h1>
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <label for="cf-name">İsim</label>
+        <input type="text" id="cf-name" placeholder="Adınızı girin" required>
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" placeholder="Emailinizi girin" required>
+        <label for="cf-message">Mesaj</label>
+        <textarea id="cf-message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+        <button type="submit" class="contact-btn">Gönder</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Galeri Section -->
+<div id="gallery" class="section" style="display:none;">
+  
+</div>
+
+<script>
+function showSection(sectionId) {
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+    section.style.display = 'none';
+  });
+  document.getElementById(sectionId).style.display = 'flex'; 
+}
+</script>
+
+</body>
+</html>
