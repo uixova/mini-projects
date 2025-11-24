@@ -59,3 +59,38 @@ function showSection(sectionId) {
 function goHome() {
   showSection('home');
 }
+
+const hamburgerToggle = document.getElementById('hamburger-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function toggleMenu(forceClose = false) {
+    const isOpen = mobileMenu.classList.contains('active');
+    const shouldOpen = forceClose ? false : !isOpen;
+
+    mobileMenu.classList.toggle('active', shouldOpen);
+
+    const icon = hamburgerToggle.querySelector('i');
+    if (shouldOpen) {
+        icon.classList.remove('bi-list');
+        icon.classList.add('bi-x'); // Menü açıkken X ikonu
+    } else {
+        icon.classList.remove('bi-x');
+        icon.classList.add('bi-list'); // Menü kapalıyken hamburger
+    }
+}
+
+hamburgerToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+document.addEventListener('click', (e) => {
+    const clickedInside = mobileMenu.contains(e.target) || hamburgerToggle.contains(e.target);
+    if (!clickedInside && mobileMenu.classList.contains('active')) {
+        toggleMenu(true);
+    }
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => toggleMenu(true));
+});

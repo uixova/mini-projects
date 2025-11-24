@@ -59,7 +59,7 @@ p {
     margin: 0;
 }
 
-#home button {
+#home .activity-btn {
     padding: 12px 30px;
     border: none;
     border-radius: 6px;
@@ -71,13 +71,13 @@ p {
     transition: all 0.3s ease;
 }
 
-#home button:hover {
+#home .activity-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px var(--color-shadow);
     filter: brightness(1.1);
 }
 
-#home button a {
+#home .activity-btn a {
     text-decoration: none;
     color: inherit;
 }
@@ -114,15 +114,61 @@ header ul li a {
     padding-bottom: 5px;
 }
 
-.home-hover {
-    color: var(--color-primary);
-}
+.home-hover { color: var(--color-primary); }
 
 header ul li a:hover {
     color: var(--color-primary);
     border-bottom: 1px solid var(--color-primary);
 }
 
+#hamburger-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+    left: 22%;
+}
+
+.mobile-side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    list-style: none;
+    padding: 80px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+}
+
+.mobile-side-menu.active {
+    left: 0;
+}
+
+.mobile-side-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.side-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.side-socials a {
+    color: white;
+    font-size: 20px;
+}
 #about {
     min-height: 100vh;
     position: relative;
@@ -399,10 +445,15 @@ header ul li a:hover {
     color: var(--color-primary);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
     .about-info { width: 700px; }
     .activity-item { flex: 0 0 30%; }
+}
+
+@media (min-width: 769px) {
+    #hamburger-toggle {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -411,6 +462,12 @@ header ul li a:hover {
     .about-info .about-image, .about-info .text-area { width: 100%; }
     .contact-container { flex-direction: column; }
     .activity-item { flex: 0 0 45%; }
+    nav .desktop-menu {
+        display: none; /* PC menüyü gizle */
+    }
+    #hamburger-toggle {
+        display: block; /* Hamburgeri göster */
+    }
 }
 
 @media (max-width: 480px) {
