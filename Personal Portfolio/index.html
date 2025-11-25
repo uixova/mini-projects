@@ -13,8 +13,12 @@
 
         <section class="hero section" id="hero">
             <header>
+                <button id="hamburger-toggle" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
                 <nav>
-                    <ul>
+                    <ul class="desktop-menu">
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#tools">Tools</a></li>
                         <li><a href="#works">Works</a></li>
@@ -25,6 +29,16 @@
                     </ul>
                 </nav>
             </header>
+
+            <ul id="mobile-menu" class="mobile-side-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#rworks">Recent Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
             <div class="hero-container">
                 <div class="intro-text">
                     <h1>Your Name Here</h1>
@@ -268,7 +282,8 @@
                 <div class="social-links">
                     <a href="#" target="_blank" aria-label="LinkedIn"><i
                             class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/uixova" target="_blank" aria-label="GitHub"><i
+                    <a href="https://github.com/uixova" target="_blank"
+                        aria-label="GitHub"><i
                             class="bi bi-github"></i></a>
                     <a href="#" target="_blank" aria-label="Twitter"><i
                             class="bi bi-twitter-x"></i></a>
