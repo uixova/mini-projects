@@ -59,6 +59,39 @@ nav ul a:hover {
     color: #2ECC71;
 }
 
+.hamburger-btn {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background: none;
+    border: none;
+    font-size: 33px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 230px;
+    height: 100vh;
+    background: #111;
+    padding: 40px 20px;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-side-menu li {
+    list-style: none;
+    display: flex;
+}
+
+.mobile-side-menu.active {
+    left: 0;
+}
+
 .hero-text {
     position: absolute; 
     right: 10%; 
@@ -516,6 +549,24 @@ nav ul a:hover {
 }
 
 @media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-side-menu a {
+        font-size: 1.4em;
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    nav h1 {
+        font-size: 2.3em;
+    }
     header {
         padding: 20px;
     }
