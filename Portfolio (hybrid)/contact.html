@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ayşe Karaca - İç Mimar</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/in-up.css">
+        <!-- Bootstrap-icons -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <h1 class="nav-title">Ayşe.</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Hakkımda</a></li>
+                        <li><a href="portfolio.html">Portföy</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <section class="contact">
+            <div class="contact-title">
+                <h1>İletişime Geçin</h1>
+                <p>Proje fikirlerinizi veya sorularınızı bizimle paylaşın.</p>
+            </div>
+
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Adınız Soyadınız</label>
+                        <input type="text" id="name" name="name" required
+                            placeholder="Tam adınızı girin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="email" required
+                            placeholder="ornek@mail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Konu</label>
+                        <input type="text" id="subject" name="subject" required
+                            placeholder="Mesajınızın konusu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-cta-btn">Mesajı
+                        Gönder</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+
+                <div class="contact-info">
+                    <h2>Doğrudan İletişim</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>İstanbul, Türkiye</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>ornekadres@email.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+90 5XX XXX XX XX</p>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <p class="copyright">&copy; 2025 <a class="developer-link"
+                    href="https://uixova.netlify.app">uixova.</a> All rights
+                reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Twitter X"><i
+                        class="bi bi-twitter-x"></i></a>
+                <a href="#" aria-label="WhatsApp"><i
+                        class="bi bi-whatsapp"></i></a>
+                <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+        </footer>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/alert.js"></script>
+    </body>
+</html>
