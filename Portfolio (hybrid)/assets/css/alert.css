@@ -1,0 +1,42 @@
+.custom-alert {
+    position: fixed;
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #e6ffed;
+    color: #00874c;
+    border: 1px solid #00874c;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s;
+}
+
+.custom-alert.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); 
+}
+
+.custom-alert.hidden {
+    display: none; 
+}
+
+.alert-icon {
+    font-size: 3.5rem; 
+    color: #00a854; 
+    margin-bottom: 10px;
+}
+
+.alert-message {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}

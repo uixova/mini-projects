@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Minimalizm ve Yaşam Alanları: Az Çoktur",
+    "excerpt": "Modern iç mimaride minimalizmin temel ilkelerini ve yaşam alanlarını nasıl dönüştürebileceğini keşfedin.",
+    "date": "2025-10-20",
+    "image": "https://placehold.co/900x450/A3E4D7/333?text=Minimalist+Oturma+Odası",
+    "content": [
+      "Minimalizm, sadece az eşya kullanmak demek değildir; aynı zamanda **sadece ihtiyacınız olanı tutarak** huzurlu, düzenli ve işlevsel bir yaşam alanı yaratma sanatıdır. Bu felsefe, görsel karmaşayı azaltırken, odadaki her bir parçanın amacını ve estetik değerini maksimize eder.",
+      "İç mimaride minimalist bir yaklaşım benimsemek için ilk adım, *de-cluttering* (fazlalıklardan kurtulma) sürecidir. Saklama alanlarınızı optimize edin, çok fonksiyonlu mobilyalar kullanın ve nötr renk paletine odaklanın. Beyaz, bej ve gri tonları, mekanın daha geniş ve aydınlık görünmesine yardımcı olur.",
+      "Minimalist tasarımlarda aydınlatma çok önemlidir. Gizli LED şeritler veya geometrik şekilli, sade lambalar kullanarak gölgelerle oynayabilir, mekana derinlik katabilirsiniz. Unutmayın, minimalizmde **kalite nicelikten önce gelir**."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Doğayı İçeri Taşımak: Biyofilik Tasarımın Yükselişi",
+    "excerpt": "Bitkiler, doğal ışık ve organik malzemelerle evinizde dingin bir atmosfer yaratmanın yolları.",
+    "date": "2025-11-05",
+    "image": "https://placehold.co/900x450/D4AC0D/333?text=Biyofilik+Mutfak+Tasarımı",
+    "content": [
+      "Biyofilik tasarım, insan ve doğa arasındaki doğal bağı temel alan bir yaklaşımdır. Yapılan araştırmalar, doğal unsurların çalışma ortamlarında verimliliği, yaşam alanlarında ise **ruh halini ve iyilik halini** önemli ölçüde artırdığını gösteriyor.",
+      "Bu trendi evinize taşımak için ahşap, taş ve bambu gibi **organik dokulu malzemeleri** tercih edin. Pencerelerin önünü açık tutarak maksimum doğal ışıktan faydalanın. Ayrıca, büyük yapraklı bitkiler (örneğin Monstera veya Ficus) hem hava kalitesini iyileştirir hem de görsel bir odak noktası oluşturur.",
+      "Renk paletinde orman yeşili, toprak tonları ve okyanus mavisi gibi doğadan ilham alan renkleri kullanın. Su özellikleri (küçük iç mekan fıskiyeleri) veya doğal taş kaplamalar, duyusal deneyimi zenginleştirerek evinizde **sakinleştirici bir sığınak** yaratmanıza yardımcı olacaktır."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Akıllı Ev Teknolojileri ve Estetik Bütünlük",
+    "excerpt": "Teknolojiyi tasarımdan ödün vermeden iç mekanlara nasıl entegre edebiliriz?",
+    "date": "2025-11-15",
+    "image": "https://placehold.co/900x450/EC7063/333?text=Akıllı+Ev+Sistemi",
+    "content": [
+      "Günümüz iç mimarisi, teknoloji ve estetiğin mükemmel birleşimini arıyor. Akıllı termostatlar, gizli hoparlör sistemleri ve otomatik perdeler artık lüks değil, **modern yaşamın bir parçası** haline geldi. Ancak tüm bu cihazların görünürde karmaşa yaratmaması gerekiyor.",
+      "Anahtar, **gizli entegrasyondur**. Örneğin, sesli asistanları kitaplık veya dekoratif objelerin içine gizlemek, şarj istasyonlarını çekmecelerin içinde oluşturmak ve TV ekranlarını kullanılmadığında sanat eserine dönüştüren çerçeve sistemleri kullanmak bu bütünlüğü sağlar.",
+      "Malzeme seçiminde, teknolojinin soğukluğunu dengeleyecek sıcak malzemeler kullanın. **Bakır ve mat siyah** gibi modern metal yüzeyler, teknolojik bileşenlerle uyumlu şık bir görünüm sunar. Unutmayın ki en iyi akıllı ev, teknolojinin varlığını hissetmediğiniz evdir."
+    ]
+  }
+]

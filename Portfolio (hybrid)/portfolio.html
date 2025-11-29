@@ -12,8 +12,12 @@
     </head>
     <body>
         <header>
+            <button id="hamburger-toggle" aria-expanded="false"
+                class="hamburger-btn">
+                <i class="bi bi-list"></i>
+            </button>
             <nav>
-                <h1 class="nav-title">Ayşe.</h1>
+                <h1 class="nav-title"><a href="index.html">Ayşe.</a></h1>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Hakkımda</a></li>
@@ -23,45 +27,65 @@
                 </ul>
             </nav>
         </header>
+
+        <ul id="mobile-menu" class="mobile-side-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="portfolio.html">Portföy</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
         <section class="portfolio section" id="portfolio">
+            <div class="portfolio-title">
+                <h1>Portföy ve Çalışmalarım ⚒️</h1>
+                <p>Tasarım trendleri, yaşam alanı ipuçları ve ilham veren
+                    projeler.</p>
+            </div>
             <div class="portfolio-container">
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design1.jpg">
                     <h1>Tasarım 1</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design2.jpg">
-                    <h1>Tasarım 1</h1>
+                    <h1>Tasarım 2</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design3.jpg">
-                    <h1>Tasarım 1</h1>
+                    <h1>Tasarım 3</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design4.jpg">
-                    <h1>Tasarım 1</h1>
+                    <h1>Tasarım 4</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design5.jpg">
-                    <h1>Tasarım 1</h1>
+                    <h1>Tasarım 5</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
                 <div class="portfolio-card card">
                     <img src="assets/images/interior-design6.jpg">
-                    <h1>Tasarım 1</h1>
+                    <h1>Tasarım 6</h1>
                     <p>İç Tasarım</p>
-                    <button class="portfolio-cta-btn">Bana Ulaş!</button>
+                    <a href="contact.html" class="portfolio-cta-btn">Bana
+                        Ulaş!</a>
                 </div>
             </div>
         </section>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
