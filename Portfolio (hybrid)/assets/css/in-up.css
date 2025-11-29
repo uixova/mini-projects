@@ -44,7 +44,7 @@ nav {
     text-decoration: none;
     display: block;
     transition: color 0.3s;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 
 .mobile-side-menu li a:hover {
@@ -113,7 +113,7 @@ nav li a:hover {
 }
 
 .developer-link:hover {
-    color: #e55a5a;
+    color: var(--color-hover);
 }
 
 .social-links {
@@ -129,7 +129,7 @@ nav li a:hover {
 }
 
 .social-links a:hover {
-    color: #ff6b6b;
+    color: var(--color-hover);
     transform: scale(1.1);
 }
 

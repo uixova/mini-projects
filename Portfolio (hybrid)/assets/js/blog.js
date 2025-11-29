@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchBlogPosts();
 
         if (searchInput) {
-            searchInput.addEventListener('keyup', handleSearch);
+            searchInput.addEventListener('input', handleSearch);;
         }
     }
 });
