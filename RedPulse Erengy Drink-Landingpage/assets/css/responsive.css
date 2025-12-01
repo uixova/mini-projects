@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .mobile-side-menu {
+        top: 64px;
+    }
+
+    #home {
+    min-height: 100dvh;
+    background: url(../images/mobile-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
