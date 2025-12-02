@@ -1,21 +1,155 @@
-@media (max-width: 768px) {
-    .desktop-nav {
-        display: none;
+@media (max-width: 1024px) {
+    .desktop-nav ul {
+        gap: 20px; 
     }
 
+    .hero-title h1 {
+        font-size: 3.8rem;
+    }
+
+    .cart-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .flavors-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .site-footer {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        min-height: 100dvh;
+        background: url(../images/mobile-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .desktop-nav {
+        display: none; 
+    }
     .hamburger-btn {
         display: block;
+        margin-left: auto; 
+    }
+    .social-nav {
+        position: absolute;
+        left: 44%;
+        margin-right: 0;
     }
 
-    .mobile-side-menu {
-        top: 64px;
+    .hero-title h1 {
+        font-size: 3rem; 
     }
 
-    #home {
-    min-height: 100dvh;
-    background: url(../images/mobile-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .section {
+        padding: 60px 20px;
+    }
+    #features h2, 
+    .flavors-header h2,
+    #contact h2,
+    #order h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .info-item {
+        max-width: 45%; 
+    }
+
+    .order-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .primary-package {
+        transform: scale(1.0); 
+    }
+    .primary-package:hover {
+        transform: scale(1.03); 
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
 }
+
+@media (max-width: 480px) {
+    .hero-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-nav {
+        position: absolute;
+        left: 40%;
+        margin-right: 0;
+    }
+
+    .cart-container,
+    .flavors-container,
+    .order-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flavors-cart,
+    .flavors img {
+        height: 300px;
+    }
+
+    .contact-info {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .info-item {
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .site-footer {
+        padding: 15px 10px;
+    }
+
+    .social-links a {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .section {
+        padding: 40px 10px;
+    }
+
+    .social-nav {
+        position: absolute;
+        left: 38%;
+        margin-right: 0;
+    }
+
+    .hero-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-subtitle, .order-subtitle, .cart p {
+        font-size: 0.9rem;
+    }
+
+    .order-now-btn, .submit-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
 }
