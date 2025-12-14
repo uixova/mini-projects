@@ -1,0 +1,242 @@
+@media (max-width: 1024px) {
+
+    .desktop-menu {
+    gap: 30px;
+    }
+
+    .desktop-menu li a {
+    font-size: 16px;
+    }
+    .desktop-menu .logo {
+    font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-img-cn {
+        width: 100%;
+        max-width: 300px;
+        transform: translateY(0);
+    }
+
+    .program-card {
+        width: calc(50% - 30px);
+        margin-bottom: 20px;
+    }
+
+    .contact-body {
+        flex-direction: column;
+    }
+
+    .contact-form-cn, .contact-info-cn {
+        flex: none;
+        width: 91%;
+    }
+
+    .home {
+        padding: 50px 20px;
+    }
+
+    .hero-body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .proof-trust-cn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    #hamburger-toggle {
+        display: block;
+    }
+
+    header {
+        height: 30px;
+        justify-content: flex-start;
+        padding-left: 65px;
+    }
+
+    .header-ads-container {
+        flex-direction: column;
+        padding: 8px 15px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .ads-text {
+        font-size: 0.9rem;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+
+    #ads-close {
+        position: absolute;
+
+        right: 10px;
+        margin-right: 0;
+    }
+
+    #ads-close i {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .proof-trust-cn p {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .methodology-steps {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .methodology-steps::before {
+        height: 85%;
+        width: 3px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .step-number {
+        margin-top: 0;
+    }
+
+    .testimonials-grid, .projects-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-card, .project-card {
+        width: 90%;
+        min-width: auto;
+    }
+    .testimonial-card {
+        padding-right: 10px;
+    }
+
+    .page.resources-page {
+        padding: 50px 20px;
+    }
+    
+    .resources-header h1 {
+        font-size: 2rem;
+    }
+
+    .lead-magnet-section {
+        padding: 30px;
+    }
+
+    .lead-magnet-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .lead-form {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+    }
+
+    .lead-form input[type="email"], .magnet-cta-button {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-brand, .footer-links, .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .methodology-section h2, 
+    .testimonials-section h2, 
+    .projects-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .page.about {
+        padding: 50px 20px;
+    }
+
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-item p {
+        font-size: 1rem;
+    }
+
+    .program-cards-cn {
+        gap: 20px;
+    }
+
+    .program-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ads-text {
+        font-size: 0.8rem;
+    }
+    
+    .ads-time, .discount {
+        font-weight: 700;
+    }
+}
