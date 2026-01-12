@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container {
+    display: flex;
+    width: 95vw;
+    height: 90vh;
+    background: url('../image/tree-leaf.jpg') center/cover;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.app-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.left-container, .right-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container {
+    flex: 2;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer-circle {
+    width: 320px;
+    height: 320px;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-display {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 90px;
+    font-weight: 200;
+    text-align: center;
+    width: 250px;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.start-btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.timer-footer-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+    text-align: center;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.nav-item.active-mode {
+    color: #ff5e5e;
+}
+
+.nav-item i {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#current-focus-name {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.noise-menu {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 10px;
+    display: none; 
+    width: 120px;
+    z-index: 100;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.noise-menu.active { display: block; }
+
+.noise-option {
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 6px;
+    color: #ccc;
+}
+
+.noise-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.right-container {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    gap: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.stat-title {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.total-time {
+    font-size: 36px;
+    color: #ff5e5e;
+    font-weight: bold;
+}
+
+.total-time small {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lock-tasks {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#todo-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    flex: 1;
+}
+
+#add-todo {
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.task-item.done span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    opacity: 0.6;
+}
+
+.task-item:hover .task-actions {
+    opacity: 1;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.record-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.progress-bar-stack {
+    display: flex;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0;
+    background: #222;
+}
+
+:fullscreen .app-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .app-container {
+        width: 98vw;
+        height: auto;
+        min-height: 95vh;
+        flex-direction: column; 
+        overflow-y: auto;
+    }
+
+    .right-container {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        backdrop-filter: blur(25px);
+    }
+
+    .left-container {
+        padding: 30px;
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .timer-circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .timer-display {
+        font-size: 70px;
+        width: 200px;
+    }
+
+    .timer-footer-nav {
+        gap: 20px;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .nav-item span {
+        font-size: 10px; 
+    }
+
+    .start-btn {
+        padding: 12px 30px;
+        width: 80%; 
+    }
+
+    #current-focus-name {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left-container {
+        padding: 20px 10px;
+    }
+
+    .timer-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .timer-display {
+        font-size: 60px;
+    }
+
+    .nav-item i {
+        font-size: 18px;
+    }
+
+    .noise-menu {
+        bottom: 60px;
+        width: 140px; 
+    }
+}
+
+:fullscreen .app-container {
+    overflow-y: auto;
+}
